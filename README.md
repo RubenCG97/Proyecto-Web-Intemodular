@@ -79,3 +79,8 @@ películas/series.
 ● Carlos Rasero
 ● María Solís
 ● Rubén Camacho
+
+# Realización de tareas
+
+Se indica que integrante del proyecto ha realizado alguna actividad
+
