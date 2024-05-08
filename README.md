@@ -15,6 +15,7 @@ Confirmación de correo electrónico mediante enlace de verificación.
 Registro de Personal Técnico:
 Formulario de registro específico para el personal técnico con campos adicionales
 según sea necesario (por ejemplo, experiencia, habilidades, etc.).
+
 ● Usuarios:
 Cuenta de Usuario:
 Información de la cuenta del usuario, incluido el plan contratado.
@@ -22,16 +23,19 @@ Capacidad para actualizar la información de la cuenta.
 Suscripciones:
 Opciones de suscripción con diferentes planes y precios.
 Proceso de pago para suscribirse a un plan.
+
 ● Catálogo de Películas y Series:
 Catálogo:
 Base de datos de películas y series disponibles.
 Información detallada de cada película/serie, incluidos género, año de lanzamiento,
 actores principales, sinopsis, etc.
 Capacidades de búsqueda y filtrado.
+
 ● Página Web:
 CRUD (Crear, Leer, Actualizar, Eliminar):
 Capacidades CRUD para administrar el contenido del sitio web, incluidas películas,
 series, usuarios, etc.
+
 ● Funcionalidades de Usuario:
 Crear Listas:
 Capacidad para que los usuarios creen y gestionen listas de películas/series.
