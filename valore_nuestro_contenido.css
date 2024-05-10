@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #eee;
+	height: 91vh;
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(to top, #fff 10%, rgb(255, 162, 241) 90%) no-repeat;
+}
+
+.wrapper {
+	max-width: 500px;
+	border-radius: 10px;
+	margin: 50px auto;
+	padding: 30px 40px;
+	box-shadow: 20px 20px 80px rgb(206, 206, 206);
+}
+
+.h2 {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 3.5rem;
+	font-weight: bold;
+	color: violet;
+	font-style: italic;
+}
+
+.h4 {
+	font-family: 'Poppins', sans-serif;
+}
+
+.input-field {
+	border-radius: 5px;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	border: 1px solid violet;
+	color: violet
+	}
+
+.input-field:hover {
+	outline: 1px solid rgb(236, 163, 236);
+	
+}
+
+
+input  {
+	border: none;
+	outline: none;
+	box-shadow: none;
+	width: 100%;
+	padding: 10px 2px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.fa-eye-slash.btn {
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+
+a {
+	text-decoration: none;
+	color: violet;
+	font-weight: 700;
+}
+
+a:hover {
+	text-decoration: none;
+	color: rgb(236, 163, 236);
+}
+
+.option {
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+.option label.text-muted {
+	display: block;
+	cursor: pointer;
+}
+
+.option input {
+	display: none;
+}
+
+.checkmark {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.option input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.option .checkmark:after {
+	content: "";
+	width: 13px;
+	height: 13px;
+	display: block;
+	background: violet;
+	position: absolute;
+	top: 48%;
+	left: 53%;
+	border-radius: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	transition: 300ms ease-in-out 0s;
+}
+
+.option input[type="radio"]:checked ~ .checkmark {
+	background: #fff;
+	transition: 300ms ease-in-out 0s;
+	border: 1px solid violet;
+}
+
+.option input[type="radio"]:checked ~ .checkmark:after {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.btn.btn-block {
+	border-radius: 20px;
+	background-color: violet;
+	color: #fff;
+}
+
+.btn.btn-block:hover {
+	background-color: rgb(243, 99, 243);
+}
+
+@media (max-width: 575px) {
+	.wrapper {
+		margin: 10px;
+	}
+}
+
+@media (max-width: 424px) {
+	.wrapper {
+		padding: 30px 10px;
+		margin: 5px;
+	}
+
+	.option {
+		position: relative;
+		padding-left: 22px;
+	}
+
+	.option label.text-muted {
+		font-size: 0.95rem;
+	}
+
+	.checkmark {
+		position: absolute;
+		top: 2px;
+	}
+
+	.option .checkmark:after {
+		top: 50%;
+	}
+
+	#forgot {
+		font-size: 0.95rem;
+	}
+}
+form{
+    margin: 10vh 0;
+}
+footer{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+
+.container{
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.rating{
+    margin-top: 10px;
+    margin-bottom: 10px;
+   position: relative;
+    display: flex;
+    padding: 10px;
+    margin-left: 85px;
+    align-items: center;
+    flex-direction: row-reverse;
+    border: 3px solid #ffffff;
+    gap: 8px;
+    border-radius: 10px;
+    background-color: palevioletred;
+    box-shadow: 30px 30px 30px -10px rgba(255, 255, 255, 0.5), 
+    inset 15px 15px 3px rgba(255, 175, 224, 0.543),
+    -4px -4px 15px rgb(252, 87, 255),
+    inset -2px -2px 12px rgba(235, 80, 249, 0.75);
+    width: 250px;
+}
+
+.rating:nth-child(1){
+    transform: translateX(-80px);
+
+}
+
+.rating:nth-child(3){
+    transform: translateX(80px);
+
+}
+
+.rating input{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance:none ;
+	color: yellow;
+}
+
+.rating input::before{
+    content: '\f005';
+    position: absolute;
+    font-family: fontAwesome;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.rating input:hover ~ input::before,
+.rating input:hover::before,
+.rating input :checked ~ input::before,
+.rating input:checked ~ input::before{
+    color: var(--c);
+}
+
+.parr{
+    margin-top: 25px;
+    text-align: center;
+    font-size: smaller;
+}
