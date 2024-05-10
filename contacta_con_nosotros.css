@@ -175,3 +175,7 @@ a:hover {
 form{
     margin: 10vh 0;
 }
+footer{
+	position: fixed;
+	width: 100%;
+}
