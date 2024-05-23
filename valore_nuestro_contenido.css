@@ -39,20 +39,21 @@ body {
 	align-items: center;
 	cursor: pointer;
 	border: 1px solid violet;
-	color: violet;
-}
+	color: violet
+	}
 
 .input-field:hover {
-	color: rgb(236, 163, 236);
-	border: 1px solid rgb(236, 163, 236);
+	outline: 1px solid rgb(236, 163, 236);
+	
 }
 
-input {
+
+input  {
 	border: none;
 	outline: none;
 	box-shadow: none;
 	width: 100%;
-	padding: 0px 2px;
+	padding: 10px 2px;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -173,10 +174,85 @@ a:hover {
 	}
 }
 form{
-    margin: 2vh 0;
+    margin: 10vh 0;
 }
 footer{
 	position: fixed;
 	width: 100%;
 	bottom: 0;
+}
+
+
+.container{
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.rating{
+    margin-top: 10px;
+    margin-bottom: 10px;
+   position: relative;
+    display: flex;
+    padding: 10px;
+    margin-left: 85px;
+    align-items: center;
+    flex-direction: row-reverse;
+    border: 3px solid #ffffff;
+    gap: 8px;
+    border-radius: 10px;
+    background-color: palevioletred;
+    box-shadow: 30px 30px 30px -10px rgba(255, 255, 255, 0.5), 
+    inset 15px 15px 3px rgba(255, 175, 224, 0.543),
+    -4px -4px 15px rgb(252, 87, 255),
+    inset -2px -2px 12px rgba(235, 80, 249, 0.75);
+    width: 250px;
+}
+
+.rating:nth-child(1){
+    transform: translateX(-80px);
+
+}
+
+.rating:nth-child(3){
+    transform: translateX(80px);
+
+}
+
+.rating input{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance:none ;
+	color: yellow;
+}
+
+.rating input::before{
+    content: '\f005';
+    position: absolute;
+    font-family: fontAwesome;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.rating input:hover ~ input::before,
+.rating input:hover::before,
+.rating input :checked ~ input::before,
+.rating input:checked ~ input::before{
+    color: var(--c);
+}
+
+.parr{
+    margin-top: 25px;
+    text-align: center;
+    font-size: smaller;
 }

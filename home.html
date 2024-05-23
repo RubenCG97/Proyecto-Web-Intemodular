@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #eee;
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to top, #fff 10%, rgb(255, 162, 241) 90%) no-repeat;
+    }
+
+    .wrapper {
+      max-width: 500px;
+      border-radius: 10px;
+      margin: 50px auto;
+      padding: 30px 40px;
+      box-shadow: 20px 20px 80px rgb(206, 206, 206);
+    }
+
+    .h2 {
+      font-family: 'Kaushan Script', cursive;
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: violet;
+      font-style: italic;
+    }
+
+    .h4 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .input-field {
+      border-radius: 5px;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      border: 1px solid violet;
+      color: violet;
+    }
+
+    .input-field:hover {
+      color: rgb(236, 163, 236);
+      border: 1px solid rgb(236, 163, 236);
+    }
+
+    input {
+      border: none;
+      outline: none;
+      box-shadow: none;
+      width: 100%;
+      padding: 0px 2px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .fa-eye-slash.btn {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: violet;
+      font-weight: 700;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: rgb(236, 163, 236);
+    }
+
+    .option {
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+    }
+
+    .option label.text-muted {
+      display: block;
+      cursor: pointer;
+    }
+
+    .option input {
+      display: none;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .option input:checked~.checkmark:after {
+      display: block;
+    }
+
+    .option .checkmark:after {
+      content: "";
+      width: 13px;
+      height: 13px;
+      display: block;
+      background: violet;
+      position: absolute;
+      top: 48%;
+      left: 53%;
+      border-radius: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: 300ms ease-in-out 0s;
+    }
+
+    .option input[type="radio"]:checked~.checkmark {
+      background: #fff;
+      transition: 300ms ease-in-out 0s;
+      border: 1px solid violet;
+    }
+
+    .option input[type="radio"]:checked~.checkmark:after {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .btn.btn-block {
+      border-radius: 20px;
+      background-color: violet;
+      color: #fff;
+    }
+
+    .btn.btn-block:hover {
+      background-color: rgb(243, 99, 243);
+    }
+
+    @media(max-width: 575px) {
+      .wrapper {
+        margin: 10px;
+      }
+    }
+
+    @media(max-width:424px) {
+      .wrapper {
+        padding: 30px 10px;
+        margin: 5px;
+      }
+
+      .option {
+        position: relative;
+        padding-left: 22px;
+      }
+
+      .option label.text-muted {
+        font-size: 0.95rem;
+      }
+
+      .checkmark {
+        position: absolute;
+        top: 2px;
+      }
+
+      .option .checkmark:after {
+        top: 50%;
+      }
+
+      #forgot {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body oncontextmenu="return false" class="snippet-body">
+  <div class="wrapper bg-white">
+    <div class="h2 text-center">CamasTV</div>
+    <div class="h4 text-muted text-center pt-2">Subscripción personalizada</div>
+    <div class="d-flex flex-column align-items-start mx-auto">
+      <div class="a1"> 
+        <label class="option text-muted">Añadir anime(3.99$)<input type="radio" name="radio"> <span class="checkmark"></span> </label> 
+      </div>
+      <div class="a2"> 
+        <label class="option text-muted">Añadir documentales(2.99$)<input type="radio" name="radio"> <span class="checkmark"></span> </label> 
+      </div>
+      <div class="a3"> 
+        <label class="option text-muted">Añadir deportes(5.99$)<input type="radio" name="radio"> <span class="checkmark"></span> </label> 
+      </div>
+      <div class="a4"> 
+        <label class="option text-muted">Añadir series y películas interactivas(1.99$)<input type="radio" name="radio"> <span class="checkmark"></span> </label> 
+      </div>
+      <div class="a5"> 
+        <label class="option text-muted">Añadir series y películas de animación(4.49$)<input type="radio" name="radio"> <span class="checkmark"></span> </label> 
+      </div>
+      <div class="a6"> 
+        <label class="option text-muted">Añadir series y películas del extranjero(3.49$)<input type="radio" name="radio"> <span class="checkmark"></span> </label> 
+      </div>
+      <div class="a7"> 
+        <label class="option text-muted">Añadir trabajos de la comunidad(0.99$)<input type="radio" name="radio"> <span class="checkmark"></span> </label> 
+      </div>
+      <!-- Otros elementos -->
+    </div> 
+    <button class="btn btn-block text-center my-3">Siguiente</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Síguenos en nuestras redes sociales:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Angelica&Java S.L.
+            </h6>
+            <p>
+              Ofrecemos un nuevo y nada novedoso servicio de Streaming, en el que podrás 
+              disfrutar de las mejores y últimas películas, series, partidos de LaLiga, La Champions League.
+              Todo esto y mucho más a un precio totalmente gratuito, ya que nosotros somos una
+              empresa muy en favor a la piratería, pues sin ella, no podríamos disfrutar de tanto 
+              contenido que existe en internet, así que, como homenaje, sacamos una web pirata ilegal
+              de contenido con Copyright.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Conoce a los creadores
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">RubeNaN</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">MariArray</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">RicarDotado</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">CarloScript</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Páginas inspiradoras
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">RojaDirecta</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Playdede</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Elamigos</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">AnimeFLV</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contáctanos</h6>
+            <p><i class="fas fa-home me-3"></i> Sevilla, Calle de los piratas 14</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              piratabarbablanca@info.es
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 34 954 367 185</p>
+            <p><i class="fas fa-print me-3"></i> + 34 643 522 896</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">piratabarbanegra.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+</html>
