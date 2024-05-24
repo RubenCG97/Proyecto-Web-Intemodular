@@ -22,7 +22,9 @@ function login() {
         window.location.href = "crudPeliculasySeries.html";
     }
     else{
-        alert("Bienvenido a CamasTv");
+        document.getElementById('login').addEventListener('click', function(){
+            Swal.fire('Bienvenido a CamasTV');
+        })
         localStorage.setItem('conectado', JSON.stringify(UsuarioYaRegistrado));
         window.location.href = "home.html";
     }
