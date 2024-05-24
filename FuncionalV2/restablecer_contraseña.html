@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restablece la contraseña</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+    <link href="registro_usuario.css" rel="stylesheet"> 
+</head>
+<body oncontextmenu="return false" class="snippet-body">
+<div class="wrapper bg-white">
+    <div class="h2 text-center">CamasTV</div>
+    <div class="h4 text-muted text-center pt-2">Restablece la contraseña</div>
+    <form class="pt-3" id="restablecerForm">
+        <div class="form-group py-1 pb-2">
+            <div class="input-field"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="violet" class="bi bi-envelope far fa-user m-1" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                </svg> 
+                <input type="email" id="email" placeholder="Correo electrónico" required class="">
+            </div>
+        </div>
+        <div class="form-group py-1 pb-2">
+            <div class="input-field"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-phone far fa-user m-1">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                </svg> 
+                <input type="tel" id="telefono" placeholder="Teléfono" required class="">  
+            </div>
+        </div>
+        <div class="form-group py-1 pb-2">
+            <div class="input-field"> 
+                <span class="fas fa-lock p-2"></span> 
+                <input type="password" id="contrasenna" placeholder="Introduce la nueva contraseña" required class=""> 
+                <button type="button" class="btn bg-white text-muted"> 
+                    <span class="far fa-eye-slash"></span>  
+                </button> 
+            </div>
+        </div>
+        <div class="form-group py-1 pb-2">
+            <div class="input-field"> 
+                <span class="fas fa-lock p-2"></span> 
+                <input type="password" id="repeContrasenna" placeholder="Repite la nueva contraseña" required class=""> 
+                <button type="button" class="btn bg-white text-muted"> 
+                    <span class="far fa-eye-slash"></span> 
+                </button> 
+            </div>
+        </div>
+        <button type="submit" class="btn btn-block text-center my-3">Continuar</button>
+    </form>
+</div>
+<script src="restablecer_contraseña.js"></script>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">piratabarbanegra.com</a>
+    </div>
+</footer>
+</body>
+</html>

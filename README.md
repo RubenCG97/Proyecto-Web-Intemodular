@@ -84,3 +84,16 @@ películas/series.
 
 Se indica que integrante del proyecto ha realizado alguna actividad
 
+# Partes realizadas por cada uno
+María:
+-Javascript de Mi Lista y Valoracion de contenido
+-Css de Mi Lista y Valoración de contenido
+-HTML de MI Lista y Valoración de Contenido
+-He añadido los fondos de pantalla de los formularios y modificado el css de algunos(Más que nada paleta de colores)
+-He añadido botones de retorno a los formularios ya que antes no tenian opción e volver al menú principal
+
+Carlos:
+-Parte de HTML: netfli.html, inicio_sesion.html, home.html, home-serie.html, home-peli.html
+-Parte de CSS: netfli.css, inicio_sesion.css, home.css, home-serie.css, home-peli.css
+-Parte de JS: netfli.js, home.js (El carousel y una tonteria del inicio básicamente)
+-Una pedazo de carpeta con fotos, eso fue lo peor

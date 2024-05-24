@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacenamiento</title>
+    <link rel="stylesheet" href="crudPeliculasySeries.css">
+</head>
+<body>
+    <main class="container">
+        <section class="crud">
+            <h1 class="Almacenamiento"> Base de datos</h1>
+            <form id="baseDeDatos" class="baseDeDatosForm">
+                <label for="inputTipo"></label>
+                <select id="inputTipo" class="form_input">
+                    <option value="Pelicula">Película</option>
+                    <option value="Serie">Serie</option>
+                    <option value="Documental">Documental</option>
+                </select>
+                <input type="text" placeholder="título" id="inputTitulo" class="form_input"> 
+                <input type="text" placeholder="duración" id="inputDuracion" class="form_input">
+                <input type="text" placeholder="genero" id="inputGenero" class="form_input">
+                <input type="text" placeholder="reparto" id="inputReparto" class="form_input">
+                <input type="text" placeholder="sipnosis" id="inputSipnosis" class="form_input">
+                <button type="submit" id="submitButton" class="button buttonAñadir">Añadir</button>
+            </form>
+            <table class="baseDeDatosTabla">
+                <thead>
+                    <tr>
+                        <th class="cabecera">Tipo</th>
+                        <th class="cabecera">Título</th>
+                        <th class="cabecera">Duración</th>
+                        <th class="cabecera">Reparto</th>
+                        <th class="cabecera">Género</th>
+                        <th class="cabecera">Sipnosis</th>
+                        <th class="cabecera">Acciones</th> 
+                    </tr>
+                </thead>
+                <tbody id="tableBody" class="table_body">
+
+                </tbody>
+            </table>
+            <a href="inicio_sesion_medio_mal2.html" class="salir">Salir</a>
+        </section>
+    </main>
+    <script src="crudPeliculasySeries.js"></script>
+    <script src="logout.js"></script>
+</body>
+</html>
