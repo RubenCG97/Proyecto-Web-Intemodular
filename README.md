@@ -97,3 +97,9 @@ Carlos:
 -Parte de CSS: netfli.css, inicio_sesion.css, home.css, home-serie.css, home-peli.css
 -Parte de JS: netfli.js, home.js (El carousel y una tonteria del inicio básicamente)
 -Una pedazo de carpeta con fotos, eso fue lo peor
+
+Ruben:
+-Parte de HTML: Creación del registro de usuario,reestablecer contraseña,contacta con nosotros y crud de administrador.
+-Parte de Css: css de registro de usuario,reestableccer contraseña,contacta con nosotros y crud de administrador.
+-Parte de JS: inicio de sesion,registro de usuario,cerrar sesion,reestablecer contraseña, crud de las peliculas y series.
+-Otro: Modificar algunos html para añadir enlaces.
