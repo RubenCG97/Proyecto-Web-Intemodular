@@ -84,3 +84,10 @@ películas/series.
 
 Se indica que integrante del proyecto ha realizado alguna actividad
 
+# Partes realizadas por cada uno
+María:
+-Javascript de Mi Lista y Valoracion de contenido
+-Css de Mi Lista y Valoración de contenido
+-HTML de MI Lista y Valoración de Contenido
+-He añadido los fondos de pantalla de los formularios y modificado el css de algunos(Más que nada paleta de colores)
+-He añadido botones de retorno a los formularios ya que antes no tenian opción e volver al menú principal
