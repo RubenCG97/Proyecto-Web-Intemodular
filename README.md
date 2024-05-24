@@ -103,3 +103,8 @@ Ruben:
 -Parte de Css: css de registro de usuario,reestableccer contraseña,contacta con nosotros y crud de administrador.
 -Parte de JS: inicio de sesion,registro de usuario,cerrar sesion,reestablecer contraseña, crud de las peliculas y series.
 -Otro: Modificar algunos html para añadir enlaces.
+
+Ricardo:
+-Parte de HTML: Creación de encuesta_usuario.html.
+-Parte de CSS: Creación de encuesta_usuario.css.
+-Parte de JS: Creación de validacion_encuesta_usuario.js
