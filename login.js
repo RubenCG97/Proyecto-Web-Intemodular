@@ -24,7 +24,7 @@ function login() {
     else{
         alert("Bienvenido a CamasTv");
         localStorage.setItem('conectado', JSON.stringify(UsuarioYaRegistrado));
-        window.location.href = "inicio.html";
+        window.location.href = "home.html";
     }
    
 }

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="miLista.css">
+	<title>CamasTV - Peliculas</title>
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<h2 class="logotipo"><a href="netfli.html"><img src="img/logo.png" alt="Camas" /></a></h2>
+			<nav>
+				<a href="home.html">Inicio</a>
+				<a href="home-peli.html" class="activo">Peliculas</a>
+				<a href="home-serie.html">Series</a>
+				<a class="disabled">Próximamente</a>
+				<a href ="miLista.html">Mi lista</a>
+				<a href ="contacta_con_nosotros.html"  class="active" >Contacta con nosotros</a>
+				<a href ="valore_nuestro_contenido.html"  class="active" >Valora nuestro contenido</a>
+				<a href ="encuesta_usuario.html"  class="active" >Encuesta de usuario</a>
+				<a href ="#" id="logout" class="active" >Cerrar sesion</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="pelicula-principal">
+			<div class="contenedor">
+				<h3 class="titulo">Dune 2</h3>
+				<p class="descripcion">
+				  Paul Atreides se une a Chani y a los Fremen mientras busca venganza contra los conspiradores que destruyeron a su familia. Enfrentándose a una elección entre el amor de su vida y el destino del universo, debe evitar un futuro terrible.
+				</p>
+				</div>
+		</div>
+        <div class="video-container contenedor">
+            <div class="botones">
+                <a href="valore_nuestro_contenido.html" class="boton"><i class="fas fa-info-circle"></i>Valore nuestro contenido</a>
+            </div>
+            <video id="videoPlayer" controls>
+                <source id="videoSource" src="video/dune2.mp4" type="video/mp4"">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+            <div class="playlist">
+                <ul id="videoList">
+                    <li data-src="video/dune2.mp4">Dune 2</li>
+                    <li data-src="video/losotros.mp4">Los Otros</li>
+                    <li data-src="video/interestelar.mp4">Interestellar</li>
+                </ul>
+            </div>
+        </div>
+		<div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h3>Por si quieres añadir estas películas...</h3>
+			</div>
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fa-solid fa-angle-left"></i></button>
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="pelicula">
+							<a href="#"><img src="img/popu6.jpg" alt="Oppenheimer"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/popu3.jpg" alt="Dune 2"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/wanda.png" alt="Wandavision"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/samurai.jpg" alt="El último samurai"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/doctorstrange.jpg" alt="Doctor Strange 2"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/losotros.jpg" alt="Los Otros"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/popu7.jpg" alt="Garfield"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/popu8.jpg" alt="Barbie"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/popu9.jpg" alt="Matrix"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/popu10.jpg" alt="Batman"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/popu11.jpg" alt="zzz"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/popu12.jpg" alt="zzz"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/popu13.jpg" alt="zzz"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/popu14.jpg" alt="zzz"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/popu15.jpg" alt="zzz"></a>
+						</div>
+					</div>
+				</div>
+				<button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fa-solid fa-angle-right"></i></button>
+			</div>
+		</div>
+	</main>
+	
+	<script src="home.js"></script>
+	<script src="logout.js"></script>
+    <script src="video-playlist.js"></script>
+    <script src="miLista.js"></script>
+</body>
+</html>

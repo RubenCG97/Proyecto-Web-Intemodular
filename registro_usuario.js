@@ -39,7 +39,7 @@ function registrar() {
         });
         localStorage.setItem('usuarios', JSON.stringify(Usuarios));
         alert('Registro completado');
-        window.location.href = "inicio_sesion_medio_mal2.html";
+        window.location.href = "inicio_sesion.html";
     }
 }
 

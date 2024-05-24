@@ -10,9 +10,8 @@ body {
     background-color: #eee;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to top, #fff 10%, rgb(255, 162, 241) 90%) no-repeat;
+    background-image: linear-gradient(to bottom, rgba(255, 149, 237, 0.425), rgba(0, 0, 0, 0)), url(img/fondoNuevo.png);
 }
-
 .wrapper {
     max-width: 500px;
     border-radius: 10px;
@@ -172,4 +171,6 @@ a:hover {
     #forgot {
         font-size: 0.95rem;
     }
+
+    
 }
